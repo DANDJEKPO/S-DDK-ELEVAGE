@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECS DDK ELEVAGE - Elevage et Formations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <!-- Indicateur de chargement (Connexion) -->
+    <div class="loader" id="loader">
+        <p>Connexion...</p>
+    </div>
+
+    <script>
+        // Afficher le contenu après 3 secondes
+        setTimeout(function() {
+            // Masquer l'écran de connexion
+            document.getElementById('loader').style.display = 'none';
+
+            // Afficher le contenu principal
+            document.getElementById('content').style.display = 'block';
+        }, 3000);  // Temps de chargement de 3 secondes (3000 ms)
+    </script>
+
+</body>
+</html>
+
+    
+    <!-- En-tête -->
+    <header>
+        <div class="logo">
+            <h1>SECS DDK ELEVAGE</h1>
+            <p>Elevage, Ventes, suivi-conseils et Formations</p>
+        </div>
+        <nav>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="contacts.html">Contacts</a></li>
+              <li><a href="produits.html">Nos Produits</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="ressources.html">Ressources</a></li>
+              <li><a href="formations.html">Formations</a></li>
+              <li><a href="recherche et partenariats.html">Recherche et Partenariats</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Formations -->
+    <section id="formations">
+        <h2>Nos Formations</h2>
+        <p>Inscrivez-vous à nos formations spécialisées en élevage et plus encore.</p>
+        <form name="inscriptionForm" action="inscription.php" method="POST" onsubmit="event.preventDefault(); showConfirmationMessage();">
+            <input type="text" name="name" placeholder="Nom" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <button type="submit">S'inscrire</button>
+        </form>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <h2>Contactez-Nous</h2>
+        <p>Pour toute question, n'hésitez pas à nous contacter via notre formulaire.</p>
+        <form>
+            <input type="text" placeholder="Votre nom" required>
+            <input type="email" placeholder="Votre email" required>
+            <textarea placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Message de confirmation -->
+    <div id="confirmation-message" class="confirmation-message"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - SECS DDK ELEVAGE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenue chez SECS DDK ELEVAGE</h1>
+        <nav>
+            <ul>
+                <li><a href="pages/formations.html">Formations</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+                <li><a href="pages/produits.html">Produits</a></li>
+                <li><a href="pages/services.html">Services</a></li>
+                <li><a href="pages/ressources.html">Ressources</a></li>
+                <li><a href="pages/blog.html">Blog</a></li>
+                <li><a href="pages/recherche et partenariatss.html">Recherche et Partenariats</a></li>
+            </ul>
+        </nav>
+      
+          
+    </header>
+
+    <div id="content">
+        <h1>Bienvenue sur notre site</h1>
+        <p>Cliquez sur un lien pour voir la page correspondante.</p>
+    </div>       
+</body>
+</html>
+

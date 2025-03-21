@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <div id="content"><head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog</title>
+        <link rel="stylesheet" href="css/style.css"> <!-- Lien vers ton fichier CSS -->
+        <script src="js/script.js" defer></script> <!-- Lien vers ton fichier JavaScript -->
+    </head>
+    <body>
+    
+        <!-- En-tête du blog -->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <!-- Section du blog -->
+        <section id="blog">
+            <h1>Les derniers articles de notre blog</h1>
+    
+            <!-- Article 1 -->
+            <article class="post">
+                <h2>Comment démarrer une ferme d'élevage réussie</h2>
+                <p><em>Publié le 20 mars 2025</em></p>
+                <p>Dans cet article, nous vous guiderons à travers les étapes essentielles pour démarrer une ferme d'élevage prospère. De la planification à l'achat des animaux, nous couvrons tout !</p>
+                <a href="post1.html" class="read-more">Lire plus</a>
+            </article>
+    
+            <!-- Article 2 -->
+            <article class="post">
+                <h2>Les erreurs courantes en élevage et comment les éviter</h2>
+                <p><em>Publié le 15 mars 2025</em></p>
+                <p>Apprenez quelles erreurs courantes les éleveurs commettent souvent et comment les éviter pour maximiser les profits et la santé de vos animaux.</p>
+                <a href="post2.html" class="read-more">Lire plus</a>
+            </article>
+    
+            <!-- Pagination -->
+            <div class="pagination">
+                <a href="#">« Précédent</a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">Suivant »</a>
+            </div>
+        </section>
+    
+        <!-- Formulaire de contact -->
+        <section id="contact">
+            <h2>Contactez-nous</h2>
+            <form action="submit_form.php" method="POST">
+                <input type="text" name="name" placeholder="Votre nom" required>
+                <input type="email" name="email" placeholder="Votre email" required>
+                <textarea name="message" placeholder="Votre message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    
+        <!-- Section des commentaires -->
+        <section id="comments">
+            <h2>Commentaires</h2>
+            <form id="comment-form">
+                <textarea placeholder="Ajoutez un commentaire" required></textarea>
+                <button type="submit">Publier</button>
+            </form>
+    
+            <div class="comment">
+                <p><strong>Jean Dupont :</strong> Super article, merci pour les conseils !</p>
+            </div>
+            <div class="comment">
+                <p><strong>Marie Martin :</strong> J'ai vraiment apprécié cet article. C'est très utile pour les nouveaux éleveurs.</p>
+            </div>
+        </section>
+    
+        <footer>
+            <p>&copy; 2025 Mon Blog. Tous droits réservés.</p>
+        </footer>
+    
+    </body>
+    </html>
+    </div>

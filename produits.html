@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <div id="content"><head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nos Produits</title>
+        <link rel="stylesheet" href="css/style.css"> <!-- Lien vers ton fichier CSS -->
+        <script src="js/script.js" defer></script> <!-- Lien vers ton fichier JavaScript -->
+    </head>
+    <body>
+    
+        <!-- En-tête du site -->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="produits.html">Produits</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <!-- Section Produits -->
+        <section id="produits">
+            <h1>Nos Produits</h1>
+    
+            <!-- Catégorie Lapins -->
+            <div class="produit-category">
+                <h2>Lapins</h2>
+                <div class="produit-item">
+                    <img src="images/lapin.jpg" alt="Lapins">
+                    <p>Description des lapins disponibles pour l'élevage.</p>
+                    <p><strong>Prix : 10 000 FCFA l'unité</strong></p>
+                    <button class="btn-acheter">Acheter maintenant</button>
+                </div>
+            </div>
+    
+            <!-- Catégorie Poissons -->
+            <div class="produit-category">
+                <h2>Poissons</h2>
+                <div class="produit-item">
+                    <img src="images/poisson.jpg" alt="Poissons">
+                    <p>Description des poissons disponibles.</p>
+                    <p><strong>Prix : 5 000 FCFA par lot</strong></p>
+                    <button class="btn-acheter">Acheter maintenant</button>
+                </div>
+            </div>
+    
+            <!-- Catégorie Canards -->
+            <div class="produit-category">
+                <h2>Canards</h2>
+                <div class="produit-item">
+                    <img src="images/canard.jpg" alt="Canards">
+                    <p>Description des canards disponibles.</p>
+                    <p><strong>Prix : 12 000 FCFA l'unité</strong></p>
+                    <button class="btn-acheter">Acheter maintenant</button>
+                </div>
+            </div>
+    
+            <!-- Catégorie Poussins -->
+            <div class="produit-category">
+                <h2>Poussins</h2>
+                <div class="produit-item">
+                    <img src="images/poussin.jpg" alt="Poussins">
+                    <p>Description des poussins disponibles.</p>
+                    <p><strong>Prix : 3 000 FCFA l'unité</strong></p>
+                    <button class="btn-acheter">Acheter maintenant</button>
+                </div>
+            </div>
+    
+            <!-- Catégorie Pondeuses -->
+            <div class="produit-category">
+                <h2>Pondeuses</h2>
+                <div class="produit-item">
+                    <img src="images/pondeuse.jpg" alt="Pondeuses">
+                    <p>Description des poules pondeuses disponibles.</p>
+                    <p><strong>Prix : 15 000 FCFA l'unité</strong></p>
+                    <button class="btn-acheter">Acheter maintenant</button>
+                </div>
+            </div>
+    
+            <!-- Catégorie Poulets de chair -->
+            <div class="produit-category">
+                <h2>Poulets de chair</h2>
+                <div class="produit-item">
+                    <img src="images/poulet.jpg" alt="Poulets de chair">
+                    <p>Description des poulets de chair disponibles.</p>
+                    <p><strong>Prix : 7 500 FCFA l'unité</strong></p>
+                    <button class="btn-acheter">Acheter maintenant</button>
+                </div>
+            </div>
+    
+            <!-- Catégorie Porcs -->
+            <div class="produit-category">
+                <h2>Porcs</h2>
+                <div class="produit-item">
+                    <img src="images/porc.jpg" alt="Porcs">
+                    <p>Description des porcs disponibles.</p>
+                    <p><strong>Prix : 30 000 FCFA l'unité</strong></p>
+                    <button class="btn-acheter">Acheter maintenant</button>
+                </div>
+            </div>
+    
+            <!-- Catégorie Provende et Formules alimentaires -->
+            <div class="produit-category">
+                <h2>Provende et Formules alimentaires</h2>
+                <div class="produit-item">
+                    <img src="images/provende.jpg" alt="Provende et Formules alimentaires">
+                    <p>Description des provendes et formules alimentaires disponibles.</p>
+                    <p><strong>Prix : À partir de 5 000 FCFA</strong></p>
+                    <button class="btn-acheter">Acheter maintenant</button>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Formulaire de contact pour commandes -->
+        <section id="contact">
+            <h2>Contactez-nous pour passer une commande</h2>
+            <form action="submit_order.php" method="POST">
+                <input type="text" name="name" placeholder="Votre nom" required>
+                <input type="email" name="email" placeholder="Votre email" required>
+                <textarea name="message" placeholder="Détails de la commande" required></textarea>
+                <button type="submit">Envoyer la commande</button>
+            </form>
+        </section>
+    
+        <!-- Pied de page -->
+        <footer>
+            <p>&copy; 2025 Mon Entreprise. Tous droits réservés.</p>
+        </footer>
+    
+    </body>
+    </html>
+    </div>
