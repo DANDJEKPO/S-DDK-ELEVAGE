@@ -1,25 +1,177 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <div id="content"><head>
+    <div id="content">
+    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nos Formations</title>
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/style.css"> <!-- Lien vers ton fichier CSS -->
+        <script src="../js/script.js" defer></script> <!-- Lien vers ton fichier JavaScript -->
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+            }
+    
+            header {
+                background-color: #007bff;
+                color: white;
+                padding: 20px;
+                text-align: center;
+            }
+    
+            nav ul {
+                display: flex;
+                justify-content: center;
+                list-style: none;
+                padding: 0;
+            }
+    
+            nav ul li {
+                margin: 0 15px;
+            }
+    
+            nav a {
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+            }
+    
+            nav a:hover {
+                text-decoration: underline;
+            }
+    
+            section {
+                padding: 20px;
+                background-color: #ffffff;
+                text-align: center;
+            }
+    
+            section h2 {
+                color: #007bff;
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+    
+            section p {
+                color: #333;
+                font-size: 18px;
+            }
+    
+            .formation-item {
+                background-color: #ffffff;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                padding: 15px;
+                margin-top: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+    
+            .formation-item h3 {
+                color: #007bff;
+            }
+    
+            .formation-item p {
+                font-size: 16px;
+                color: #333;
+            }
+    
+            .btn-inscription {
+                background-color: #28a745;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-weight: bold;
+                margin-top: 10px;
+            }
+    
+            .btn-inscription:hover {
+                background-color: #218838;
+            }
+    
+            footer {
+                background-color: #007bff;
+                color: white;
+                text-align: center;
+                padding: 10px 0;
+                margin-top: 30px;
+            }
+        </style>
     </head>
     <body>
+    
         <header>
+            <h1>Bienvenue sur SECS DDK ELEVAGE</h1>
             <nav>
                 <ul>
-                    <li><a href="../index.html">Accueil</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                    <li><a href="produits.html">Nos Produits</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="ressources.html">Ressources</a></li>
+                    <li><a href="formations.html">Formations</a></li>
+                    <li><a href="recherche et partenariats.html">Recherche et Partenariats</a></li>
                 </ul>
             </nav>
         </header>
+    
+        <!-- Section des formations -->
         <section>
             <h2>Nos Formations</h2>
-            <p>Nous proposons des formations en élevage et gestion de ferme.</p>
+            <p>Nous proposons des formations dans les domaines suivants :</p>
+    
+            <!-- Formation en élevage -->
+            <div class="formation-item">
+                <h3>Formations en Élevage</h3>
+                <p>
+                    - Élevage de Lapins<br>
+                    - Élevage de Poulets (de chair et pondeuses)<br>
+                    - Élevage de Porcs<br>
+                    - Élevage de Poissons<br>
+                    - Élevage de Canards<br>
+                    - Gestion de la santé animale
+                </p>
+                <button class="btn-inscription">S'inscrire maintenant</button>
+            </div>
+    
+            <!-- Formation en collecte de données -->
+            <div class="formation-item">
+                <h3>Formation en Collecte de Données</h3>
+                <p>
+                    - Introduction à la collecte de données avec KoboToolbox<br>
+                    - Utilisation de Google Forms pour la collecte de données<br>
+                    - Analyse et traitement des données collectées<br>
+                    - Création et gestion de questionnaires<br>
+                    - Méthodes de collecte pour l’agriculture et l’élevage
+                </p>
+                <button class="btn-inscription">S'inscrire maintenant</button>
+            </div>
+    
+            <!-- Formation en développement web -->
+            <div class="formation-item">
+                <h3>Formation en Développement Web</h3>
+                <p>
+                    - Introduction au développement Front-End (HTML, CSS, JavaScript)<br>
+                    - Développement Back-End avec Node.js<br>
+                    - Création de sites Web dynamiques<br>
+                    - Gestion de bases de données avec MySQL<br>
+                    - Déploiement d'un site Web sur un serveur
+                </p>
+                <button class="btn-inscription">S'inscrire maintenant</button>
+            </div>
         </section>
-        <script src="../js/script.js"></script>
+    
+        <footer>
+            <p>&copy; 2025 SECS DDK ELEVAGE. Tous droits réservés.</p>
+        </footer>
+    
     </body>
-    </html></div>
+    </html>
+    </div>
+
 
