@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <div id="content"><head>
+    <div id="content">
+    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nos Services</title>
+        <!-- Lien vers le fichier CSS -->
+        <link rel="stylesheet" href="css/style.css">
         <style>
             body {
                 font-family: Arial, sans-serif;
                 margin: 0;
                 padding: 0;
-                background-color: #f8f9fa;
+                background-color: #f0f8ff; /* Bleu clair */
                 text-align: center;
             }
             .container {
@@ -18,7 +21,7 @@
                 padding: 20px;
             }
             h1 {
-                color: #333;
+                color: #007bff; /* Bleu */
             }
             .service {
                 background: white;
@@ -27,9 +30,34 @@
                 border-radius: 10px;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             }
+            footer {
+                background-color: #28a745; /* Vert */
+                color: white;
+                padding: 10px;
+                margin-top: 20px;
+                font-size: 14px;
+            }
+            footer a {
+                color: white;
+                text-decoration: none;
+            }
         </style>
     </head>
     <body>
+        <header>
+            <nav>
+                <ul>
+                  <li><a href="index.html">Accueil</a></li>
+                  <li><a href="contacts.html">Contacts</a></li>
+                  <li><a href="produits.html">Nos Produits</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="ressources.html">Ressources</a></li>
+                  <li><a href="formations.html">Formations</a></li>
+                  <li><a href="recherche et partenariats.html">Recherche et Partenariats</a></li>
+                </ul>
+            </nav>
+        </header>
         <div class="container">
             <h1>Nos Services</h1>
             <div class="service">
@@ -45,6 +73,13 @@
                 <p>Bénéficiez de notre expertise pour optimiser la gestion de votre élevage.</p>
             </div>
         </div>
+
+        <footer>
+            <p>&copy; 2025 SECS DDK ÉLEVAGE - Tous droits réservés</p>
+        </footer>
+
+        <!-- Lien vers le fichier JS -->
+        <script src="js/script.js"></script>
     </body>
-    </html>
-    </div>
+</html>
+
