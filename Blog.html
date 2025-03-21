@@ -1,45 +1,210 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <div id="content"><head>
+    <div id="content">
+    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Blog</title>
-        <link rel="stylesheet" href="css/style.css"> <!-- Lien vers ton fichier CSS -->
-        <script src="js/script.js" defer></script> <!-- Lien vers ton fichier JavaScript -->
+        <link rel="stylesheet" href="../css/style.css"> <!-- Lien vers ton fichier CSS -->
+        <script src="../js/script.js" defer></script> <!-- Lien vers ton fichier JavaScript -->
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+            }
+    
+            header {
+                background-color: #007bff;
+                color: white;
+                padding: 20px;
+                text-align: center;
+            }
+    
+            nav ul {
+                display: flex;
+                justify-content: center;
+                list-style: none;
+                padding: 0;
+            }
+    
+            nav ul li {
+                margin: 0 15px;
+            }
+    
+            nav a {
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+            }
+    
+            nav a:hover {
+                text-decoration: underline;
+            }
+    
+            section {
+                padding: 20px;
+                background-color: #ffffff;
+                text-align: center;
+            }
+    
+            section h2 {
+                color: #007bff;
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+    
+            .post {
+                background-color: #ffffff;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                padding: 15px;
+                margin-top: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+    
+            .post h2 {
+                color: #007bff;
+            }
+    
+            .post p {
+                font-size: 16px;
+                color: #333;
+            }
+    
+            .read-more {
+                color: #007bff;
+                text-decoration: none;
+                font-weight: bold;
+            }
+    
+            .pagination {
+                margin-top: 20px;
+            }
+    
+            .pagination a {
+                color: #007bff;
+                margin: 0 10px;
+                text-decoration: none;
+            }
+    
+            .pagination a:hover {
+                text-decoration: underline;
+            }
+    
+            footer {
+                background-color: #007bff;
+                color: white;
+                text-align: center;
+                padding: 10px 0;
+                margin-top: 30px;
+            }
+    
+            /* Formulaire de contact et commentaires */
+            #contact, #comments {
+                margin-top: 30px;
+                background-color: #ffffff;
+                padding: 15px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+    
+            #contact input, #contact textarea {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border-radius: 5px;
+                border: 1px solid #ddd;
+            }
+    
+            #contact button {
+                background-color: #28a745;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-weight: bold;
+            }
+    
+            #contact button:hover {
+                background-color: #218838;
+            }
+    
+            #comments form textarea {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border-radius: 5px;
+                border: 1px solid #ddd;
+            }
+    
+            #comments button {
+                background-color: #28a745;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-weight: bold;
+            }
+    
+            #comments button:hover {
+                background-color: #218838;
+            }
+    
+            .comment {
+                background-color: #f9f9f9;
+                padding: 10px;
+                margin-top: 10px;
+                border-radius: 5px;
+                border-left: 5px solid #007bff;
+            }
+    
+            .comment p {
+                color: #333;
+            }
+    
+        </style>
     </head>
     <body>
     
-        <!-- En-tête du blog -->
         <header>
+            <h1>Bienvenue sur notre Blog</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
-                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                    <li><a href="produits.html">Nos Produits</a></li>
                     <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="ressources.html">Ressources</a></li>
+                    <li><a href="formations.html">Formations</a></li>
+                    <li><a href="recherche et partenariats.html">Recherche et Partenariats</a></li>
                 </ul>
             </nav>
         </header>
     
-        <!-- Section du blog -->
+        <!-- Section des articles du blog -->
         <section id="blog">
-            <h1>Les derniers articles de notre blog</h1>
+            <h2>Les derniers articles de notre blog</h2>
     
             <!-- Article 1 -->
-            <article class="post">
+            <div class="post">
                 <h2>Comment démarrer une ferme d'élevage réussie</h2>
                 <p><em>Publié le 20 mars 2025</em></p>
                 <p>Dans cet article, nous vous guiderons à travers les étapes essentielles pour démarrer une ferme d'élevage prospère. De la planification à l'achat des animaux, nous couvrons tout !</p>
                 <a href="post1.html" class="read-more">Lire plus</a>
-            </article>
+            </div>
     
             <!-- Article 2 -->
-            <article class="post">
+            <div class="post">
                 <h2>Les erreurs courantes en élevage et comment les éviter</h2>
                 <p><em>Publié le 15 mars 2025</em></p>
                 <p>Apprenez quelles erreurs courantes les éleveurs commettent souvent et comment les éviter pour maximiser les profits et la santé de vos animaux.</p>
                 <a href="post2.html" class="read-more">Lire plus</a>
-            </article>
+            </div>
     
             <!-- Pagination -->
             <div class="pagination">
@@ -78,9 +243,11 @@
         </section>
     
         <footer>
-            <p>&copy; 2025 Mon Blog. Tous droits réservés.</p>
+            <p>&copy; 2025 SECS DDK ELEVAGE. Tous droits réservés.</p>
         </footer>
     
     </body>
     </html>
+    
     </div>
+
