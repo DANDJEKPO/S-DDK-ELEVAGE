@@ -14,6 +14,45 @@ header {
     padding: 10px 0;
     text-align: center;
 }
+/* Clignotement */
+.blink {
+    color: red;
+    font-weight: bold;
+    animation: clignoter 1s infinite alternate;
+}
+
+@keyframes clignoter {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* Défilement de texte */
+.scroll-text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid black;
+    animation: defilement 15s steps(30) infinite;
+}
+
+@keyframes defilement {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Rotation */
+.rotate {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+    animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
 
 header h1 {
     margin: 0;
