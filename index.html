@@ -58,11 +58,12 @@
     <section id="formations">
         <h2>Nos Formations</h2>
         <p>Inscrivez-vous à nos formations spécialisées en élevage et plus encore.</p>
-        <form name="inscriptionForm" action="inscription.php" method="POST" onsubmit="event.preventDefault(); showConfirmationMessage();">
-            <input type="text" name="name" placeholder="Nom" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <button type="submit">S'inscrire</button>
-        </form>
+<form action="submit_registration.php" method="POST">
+    <input type="text" name="username" placeholder="Nom d'utilisateur" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="password" name="password" placeholder="Mot de passe" required>
+    <button type="submit">S'inscrire</button>
+</form>
     </section>
 
     <!-- Section Contact -->
