@@ -101,4 +101,20 @@ body
         });
     });
 </script>
+document.addEventListener("DOMContentLoaded", function() {
+    let articles = [
+        { title: "Les secrets d’un élevage réussi", content: "Découvrez les meilleures pratiques..." },
+        { title: "Comment nourrir vos animaux efficacement ?", content: "Une alimentation équilibrée est essentielle..." }
+    ];
+
+    let container = document.getElementById("articles-container");
+
+    articles.forEach(article => {
+        let articleDiv = document.createElement("div");
+        articleDiv.innerHTML = `<h3>${article.title}</h3><p>${article.content}</p>`;
+        container.appendChild(articleDiv);
+    });
+});
+
 body
+
