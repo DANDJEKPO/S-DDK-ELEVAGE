@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mon Blog</title>
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa;
+        }
+        header {
+            background-color: #00796b;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #004d40;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            padding: 14px 20px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #80cbc4;
+            color: black;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .contact-content {
+            float: left;
+            width: 70%;
+            padding: 20px;
+            background-color: #fff;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar {
+            float: right;
+            width: 30%;
+            padding: 20px;
+            background-color: #f1f8e9;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #00796b;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #00796b;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #004d40;
+        }
+        footer {
+            clear: both;
+            background-color: #00796b;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Contactez-nous</h1>
+        <p>Nous serions ravis d'avoir de vos nouvelles !</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <div class="container">
+            <a href="#">Accueil</a>
+            <a href="#">À propos</a>
+            <a href="#">Articles</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <div class="contact-content">
+            <h2>Formulaire de contact</h2>
+            <p>Vous avez des questions ? Complétez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.</p>
+            <div class="contact-form">
+                <form action="#">
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Sidebar Section -->
+        <div class="sidebar">
+            <h3>Suivez-nous</h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+
+            <h3>Nos coordonnées</h3>
+            <p>Email: <a href="mailto:contact@monblog.com">contact@monblog.com</a></p>
+            <p>Téléphone: +229 123 456 789</p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Mon Blog. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
