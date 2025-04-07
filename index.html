@@ -62,48 +62,10 @@
             </ul>
         </nav>
     </header> 
-    }
-
-   
-
+    
+  <img src=https://raw.githubusercontent.com/DANDJEKPO/S-DDK-ELEVAGE/refs/heads/main/PONDEUSE.png" alt="Titre" style="width: 100%; height: auto;">
 
 
-
-  <section class="carousel">
-    <div class="arrow left" onclick="prevSlide()">❮</div>
-    <div class="arrow right" onclick="nextSlide()">❯</div>
-
-    <div class="carousel-container" id="carousel">
-      <div class="carousel-item">
-        <img src="https://raw.githubusercontent.com/DANDJEKPO/S-DDK-ELEVAGE/refs/heads/main/PONDEUSE.png" alt="Pondeuse">
-        <div class="caption">Poules pondeuses - Rentabilité assurée</div>
-      </div>
-    </div>
-  </section>
-
-  <script>
-    let currentIndex = 0;
-    const carousel = document.getElementById("carousel");
-    const items = document.querySelectorAll(".carousel-item");
-
-    function updateCarousel() {
-      const offset = -currentIndex * 100;
-      carousel.style.transform = `translateX(${offset}%)`;
-    }
-
-    function nextSlide() {
-      currentIndex = (currentIndex + 1) % items.length;
-      updateCarousel();
-    }
-
-    function prevSlide() {
-      currentIndex = (currentIndex - 1 + items.length) % items.length;
-      updateCarousel();
-    }
-
-    // Défilement automatique toutes les 5 secondes
-    setInterval(nextSlide, 5000);
-  </script>
     <!-- Section Formations -->
   <img src="https://raw.githubusercontent.com/DANDJEKPO/S-DDK-ELEVAGE/refs/heads/main/cc.png" alt="Image en pleine largeur" class="full-width-image">
     <section id="formations">
