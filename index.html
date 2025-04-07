@@ -62,14 +62,49 @@
             </ul>
         </nav>
     </header>
-<section class="carousel">
-      <!-- Carrousel dynamique d'images -->
-      <div id="carousel" class="carousel-container">
-        <img src="https://raw.githubusercontent.com/DANDJEKPO/S-DDK-ELEVAGE/refs/heads/main/POISSON.png" alt="Formation">
-        <img src="https://raw.githubusercontent.com/DANDJEKPO/S-DDK-ELEVAGE/refs/heads/main/PORC.png " alt="Conseils">
-        <img src="https://raw.githubusercontent.com/DANDJEKPO/S-DDK-ELEVAGE/refs/heads/main/PONDEUSE.png " alt="Boutique">
+<<section class="carousel">
+    <div class="arrow left" onclick="prevSlide()">❮</div>
+    <div class="arrow right" onclick="nextSlide()">❯</div>
+
+    <div class="carousel-container" id="carousel">
+      <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/DANDJEKPO/S-DDK-ELEVAGE/refs/heads/main/POISSON.png" alt="Poisson">
+        <div class="caption">Élevage de poissons - Formation pratique</div>
       </div>
-    </section>
+      <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/DANDJEKPO/S-DDK-ELEVAGE/refs/heads/main/PORC.png" alt="Porc">
+        <div class="caption">Élevage de porcs - Techniques modernes</div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/DANDJEKPO/S-DDK-ELEVAGE/refs/heads/main/PONDEUSE.png" alt="Pondeuse">
+        <div class="caption">Poules pondeuses - Rentabilité assurée</div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    let currentIndex = 0;
+    const carousel = document.getElementById("carousel");
+    const items = document.querySelectorAll(".carousel-item");
+
+    function updateCarousel() {
+      const offset = -currentIndex * 100;
+      carousel.style.transform = `translateX(${offset}%)`;
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + items.length) % items.length;
+      updateCarousel();
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % items.length;
+      updateCarousel();
+    }
+
+    // Optionnel : faire défiler automatiquement toutes les 5 secondes
+    setInterval(nextSlide, 5000);
+  </script>
     <!-- Section Formations -->
   <img src="https://raw.githubusercontent.com/DANDJEKPO/S-DDK-ELEVAGE/refs/heads/main/cc.png" alt="Image en pleine largeur" class="full-width-image">
     <section id="formations">
