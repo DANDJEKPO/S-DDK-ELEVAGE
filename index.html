@@ -61,8 +61,81 @@
               <li><a href="recherche et partenariats.html">Recherche et Partenariats</a></li>
             </ul>
         </nav>
-    </header>
-<<section class="carousel">
+    </header> margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    .carousel {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      margin: 40px auto;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .carousel-container {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-item {
+      min-width: 100%;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .caption {
+      background: #fff;
+      padding: 10px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 40px;
+      color: white;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .arrow.left {
+      left: 15px;
+    }
+
+    .arrow.right {
+      right: 15px;
+    }
+
+    @media (max-width: 600px) {
+      .arrow {
+        font-size: 28px;
+        padding: 8px;
+      }
+
+      .caption {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="carousel">
     <div class="arrow left" onclick="prevSlide()">❮</div>
     <div class="arrow right" onclick="nextSlide()">❯</div>
 
@@ -92,17 +165,17 @@
       carousel.style.transform = `translateX(${offset}%)`;
     }
 
-    function prevSlide() {
-      currentIndex = (currentIndex - 1 + items.length) % items.length;
-      updateCarousel();
-    }
-
     function nextSlide() {
       currentIndex = (currentIndex + 1) % items.length;
       updateCarousel();
     }
 
-    // Optionnel : faire défiler automatiquement toutes les 5 secondes
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + items.length) % items.length;
+      updateCarousel();
+    }
+
+    // Défilement automatique toutes les 5 secondes
     setInterval(nextSlide, 5000);
   </script>
     <!-- Section Formations -->
